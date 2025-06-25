@@ -37,7 +37,7 @@ function writeLog(message1, message2) {
 writeLog('ms1', 'ms2');
 
 /**
- * - Đối tượng arguments
+ * - Đối tượng arguments --> là tham số truyền vào
  * - Giới thiệu vòng lập for
  *  Trong Javascript sử dụng dấu backticks (`) để nhúng biến dễ dàng.
  */

@@ -67,8 +67,36 @@ console.log(languages4.unshift('Japanese'));
 console.log(languages4.unshift('Chinese', 'German', 'Hindi'));
 console.log(languages4);
 
-// Splicing
+var languages5 = [
+    'English', 
+    'French',
+    'Vietnames',
+    'Spanish'
+]
+// Splicing => có thể xoá, cắt hoặc có thể chèn vào mảng
+// Xoá => sau khi xoá sẽ trả về mảng đã xoá
+languages5.splice(1, 2);// đặt con trỏ vào vị trí 1, số phần tử muốn xoá 2 => sau khi xoá sẽ còn ['English', 'Spanish']
+// Chèn => Chèn thêm vào vị trí nào đó ở trong mảng
+languages5.splice(2, 0, "Japanese");// mảng trả về Japanese sẽ đứng trước vị trí Vietnames
+console.log(languages5);
 
+var languages7 = [
+    'English', 
+    'French'
+]
+var languages8 = [
+    'Vietnames',
+    'Spanish'
+]
+// Concat => nối array lại với nhau
+console.log(languages7.concat(languages8)); // 2 cái mảng sẽ được hợp nhất vào cái mảng gọi đến phương thức concat => languages7
 
-// Concat
-// Slicing
+var languages9 = [
+    'English', 
+    'French',
+    'Vietnames',
+    'Spanish'
+]
+// Slicing => cắt 1 vài element của mảng
+console.log(languages9.slice(1, 3)); // đang cắt để lấy mảng ['french', 'Vietnames']
+console.log(languages9); // mảng trên đã cắt nhưng không làm thay đổi mảng ban đầu ['English', 'French', 'Vietnames', 'Spanish'] 
